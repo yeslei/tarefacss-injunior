@@ -1,124 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Processo INJunior</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TarefaCSS - INJunior</title>
+    <link rel="stylesheet" href="Reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
     <header>
-      <h1>Weslley</h1>
-      <i class="material-icons"
-        ><img
-          class="material-icons"
-          src="assets\baseline_menu_black_24dp.png"
-          alt=""
-      /></i>
-      <nav>
-        <a href="https://www.instagram.com/yeslei_/" class="headerLinks"
-          >Instagram</a
-        >
-        <a
-          href="https://gitlab.com/yeslei/projeto-css-injunior"
-          class="headerLinks"
-          >Gitlab</a
-        >
-        <a href="" class="headerLinks">Contato</a>
-      </nav>
+        <div class="cabecalho">
+            <h1>Weslley</h1>
+            <nav class="menu">
+                <!-- Checkbox para controlar a visibilidade do menu -->
+                <input type="checkbox" id="menu-toggle" class="faketrigger">
+                
+                <!-- Ícone do menu hambúrguer -->
+                <label for="menu-toggle" class="menu-lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                
+                <!-- Menu de navegação -->
+                <ul class="menu-content">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-      <img class="vec" src="assets/vectra.jpg" alt="" />
-      <section class="section1">
-        <div class="divImgSection1">
-          <img src="assets/vectra.jpg" alt="" height="150px" />
-        </div>
-        <div class="divTextSection1">
-          <h2>Apresentação</h2>
-          <p>
-            Olá! Sou Weslley Ribeiro, também conhecido como Yeslei, estudante de
-            18 anos no 2º período de Sistemas de Informação na UFF. Além da
-            paixão por tecnologia e carros, mantenho uma vida ativa com
-            musculação e basquete. Também toco violão, teclado e bateria,
-            integrando música à minha rotina. Sou extremamente eclético e mudo
-            de gosto frequentemente, meus filmes, músicas ou séries dependem
-            muito do momento.
-          </p>
-        </div>
-      </section>
-      <section class="section2">
-        <div class="hobbiesSection">
-          <h2>Hobbies</h2>
-          <div class="dosCards">
-            <div class="card">
-              <img class="card" src="assets/musculacao.jpg" alt="" />
+        <section class="apresentacao">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkvUTwjJcLbYzI3xgepIk9nkxVESSoeEYAmg&s" alt="">
             </div>
-            <div class="card">
-              <img class="card" src="assets/basquete.jpg" alt="" />
+            <div class="primeiraSection">
+                <h2 id="subtitulo">Subtitulo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu enim dolor. Etiam interdum, lacus rhoncus egestas pretium, odio sapien scelerisque nulla, nec volutpat urna felis non massa. Vestibulum pellentesque velit ligula, ut luctus eros sagittis laoreet. Phasellus sed lacinia urna. Ut posuere pharetra scelerisque. Mauris laoreet cursus suscipit. Vestibulum.</p>
             </div>
-            <div class="card">
-              <img class="card" src="assets/jogos.jpg" alt="" />
+        </section>
+        <section class="tierlist">
+            <div class="hobbies">
+                <h2>Hobbies</h2>
+                <ul class="reverse">
+                    <li><div id="hobbie1"><h3>Basquete</h3></div></li>
+                    <li><div id="hobbie2"><h3>Trilha</h3></div></li>
+                    <li><div id="hobbie3"><h3>Futebol</h3></div></li>
+                    <li><div id="hobbie4"><h3>Ler</h3></div></li>
+                    <li><div id="hobbie5"><h3>Series</h3></div></li>
+                </ul>
             </div>
-            <div class="card">
-              <img class="card" src="assets/ouvindomusic.jpg" alt="" />
+            <div class="top5 hobbies">
+                <h2>Piores do Vasco</h2>
+                <ul>
+                    <li><div id="top1"><p>1</p><h3>Praxedes</h3></div></li>
+                    <li><div id="top2"><p>2</p><h3>Leo Pele</h3></div></li>
+                    <li><div id="top3"><p>3</p><h3>Victor</h3></div></li>
+                    <li><div id="top4"><h3>Lyncon</h3></div></li>
+                    <li><div id="top5"><h3>Maicon</h3></div></li>
+                </ul>
             </div>
-            <div class="card">
-              <img class="card" src="assets/ler.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="top5CantoresSection">
-          <h2>Top 5 Cantores</h2>
-          <div class="dosCard2">
-            <div class="card">
-              <img class="card" src="assets/joji.jpg" alt="" />
-            </div>
-            <div class="card">
-              <img class="card" src="assets/tyler.jpg" alt="" />
-            </div>
-            <div class="card">
-              <img class="card" src="assets/matue.jpg" alt="" />
-            </div>
-            <div class="card">
-              <img class="card" src="assets/dontoliver.jpg" alt="" />
-            </div>
-            <div class="card">
-              <img class="card" src="assets/kayblack.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
-    <footer>
-      <div class="footerDivIcons">
-        <a
-          href="https://www.instagram.com/yeslei_/"
-          target="_blank"
-          class="footerIcons"
-        >
-          <img src="assets/instagram.png" alt="instagram" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/yeslei/"
-          target="_blank"
-          class="footerIcons"
-        >
-          <img src="assets/linkedin.png" alt="linkedin" />
-        </a>
-        <a href="" target="_blank" class="footerIcons">
-          <img src="assets/facebook.png" alt="facebook" />
-        </a>
-        <a href="https://gitlab.com/yeslei" target="_blank" class="footerIcons">
-          <img src="assets/gitlab.png" alt="gitlab" />
-        </a>
-      </div>
-      <button>Entre em contato</button>
+    <footer> 
+        <div class="redesSociais">
+            <a href=""><img src="assets/instagram.svg" alt="Link do Instagram"></a>
+            <a href=""><img src="assets/linkedin.svg" alt="Link do Linkedin"></a>
+            <a href=""><img src="assets/facebook.svg" alt="Link do Facebook"></a>
+            <a href=""><img src="assets/gitlab.svg" alt="Link do Gitlab"></a>
+        </div>
+
+        <a  href="" class="buttonContact">Entre em Contato</a>
     </footer>
-  </body>
+</body>
 </html>
