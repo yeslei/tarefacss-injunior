@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+html, body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* paleta de cores a ser usada: #00FF19 #408747 #11ED27 #38543B #2C332D */
+/* estilo do header */
+
+header {
+  background-color: #2C332D;
+  width: 100%;
+  height: 6.8125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+nav {
+  margin-right: 7.1875rem;
+}
+
+.vec {
+  display: none;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-left: 7.1875rem;
+
+}
+
+nav a {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.headerLinks {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+/* Estilo do main */
+/* section 1 */
+.section1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.divTextSection1 {
+  color: #2C332D;
+  margin-right: 14.1875rem;
+  margin-top: 2em;
+}
+
+.divTextSection1 h2 {
+  font-size: 1.5rem;
+}
+
+.divTextSection1 p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  text-align: left;
+  margin-top: 2rem;
+
+}
+
+.section1>.divImgSection1 {
+  margin-left: 14.1875rem;
+  margin-right: 7.8125rem;
+
+}
+
+
+/* Section 2 */
+.section2 {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: baseline;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.vec {
+  height: 12rem;
+}
+
+.card {
+  width: 6.5rem;
+  height: 9.375rem;
+  border-radius: 0.5em;
+}
+
+.dosCards {
+  display: flex;
+  flex-flow: row-reverse;
+
+}
+
+.dosCard2 {
+  display: flex;
+
+}
+
+.hobbiesSection {
+  text-align: end;
+  margin-left: 6rem;
+}
+
+.top5CantoresSection {
+  margin-left: 6rem;
+}
+
+.material-icons {
+  display: none;
+}
+
+/* Estilo do Footer  */
+footer {
+  background-color: #2C332D;
+  width: 100%;
+  height: 4.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerIcons {
+  margin-right: 1.25rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.footerDivIcons {
+  margin-left: 6.03125rem;
+}
+
+button {
+  border: none;
+  border-radius: 2px;
+  margin-right: 6.03125rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+/* reponsividade basica */
+
+@media screen and (max-width: 1247px) {
+  .section2 {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 809px) {
+  header {
+    width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .section1 {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 0rem;
+    display: block;
+    text-align: start;
+    width: 90%;
+
+
+  }
+
+  .section2 {
+    margin-left: 0.5px;
+    width: 500px;
+  }
+
+
+  footer {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 20%;
+  }
+
+  .footerDivIcons {
+    margin-left: 12px;
+  }
+
+  button {
+    margin-right: 12px;
+  }
+
+
+  .dosCards, .dosCard2 {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .hobbiesSection, .top5CantoresSection {
+    text-align: start;
+    width: 200px;
+  }
+
+  .divImgSection1 {
+    display: none;
+  }
+
+  .vec {
+    display: block;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .section2 {
+    justify-content: start;
+    margin-left: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    margin-left: 5.1875rem;
+
+  }
+
+  .divTextSection1 {
+    color: #2C332D;
+    margin-right: 7.1875rem;
+    margin-top: 2em;
+  }
+
+  .card {
+    width: 3.25rem;
+    height: 4.6875rem;
+  }
+
+  .section2 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-content: start;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+
+  .divTextSection1 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .vec {
+    width: 300px;
+  }
+
+  main {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .material-icons {
+    display: block;
+    margin-right: 10px;
+  }
+}
